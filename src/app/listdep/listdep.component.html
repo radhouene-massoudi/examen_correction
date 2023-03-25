@@ -1,0 +1,11 @@
+<input type="number" [(ngModel)]="maxsalaire">
+<div *ngFor="let d of list;let i=index">
+    <div *ngIf="d.max_salaire<maxsalaire ||maxsalaire==0">
+
+{{d.domaine}}
+{{d.max_salaire}}
+</div>
+</div>
+
+<input type="submit" (click)="cal()">
+{{nbtot}}

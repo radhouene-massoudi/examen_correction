@@ -1,0 +1,18 @@
+{
+  "departement": [
+    {
+      "matricule": "TTTT",
+      "domaine": "rh",
+      "nb_employer": 50,
+      "max_salaire": 4.4444444444444445e+33,
+      "id": 3
+    },
+    {
+      "matricule": "TTTT",
+      "domaine": "rh",
+      "nb_employer": 90,
+      "max_salaire": 500,
+      "id": 4
+    }
+  ]
+}

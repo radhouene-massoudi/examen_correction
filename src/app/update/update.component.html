@@ -1,0 +1,22 @@
+<form #f="ngForm">
+    <label>marticule</label>
+<input type="text" name="matricule" ngModel #m="ngModel" minlength="3" maxlength="7">
+<div *ngIf="m.invalid">
+<div *ngIf="m.errors?.['minlength']">
+    minglength
+</div>
+<div *ngIf="m.errors?.['maxlength']">
+    maxglength
+</div>
+</div>
+<label>domaine</label>
+<input type="text" name="domaine" ngModel #d="ngModel">
+<div *ngIf="d.value!='rh' && d.value!='informatique' && d.value!='f'">
+domaine must be ........................
+</div>
+<label> nb employer</label>
+<input type="number" name="nb_employer"ngModel>
+<label> maxsalaire</label>
+<input type="number" name="max_salaire" ngModel>
+<input type="submit" value="update" [disabled]="f.invalid" (click)="update(f.value)">
+</form>
